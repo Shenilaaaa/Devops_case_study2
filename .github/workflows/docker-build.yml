@@ -25,4 +25,3 @@ jobs:
 - name: Build and push Docker image
   run: docker build -f Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/my-node-app:v1 .
 
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-node-app:v1
